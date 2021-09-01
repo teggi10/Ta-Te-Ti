@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ta-Te-Ti</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+
+    <div class="dialogueBox startScreen">
+  
+      <div class="introUtility">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="title">Tic Tac Toe</h1>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-4">
+            <h2 class="startScreenMarkerX">X's</h2>
+            <div class="radio">
+              <div class="radioBtn-warning">
+                <input type="radio" name="radio" id="player1Human" />
+                <label for="player1Human">Humano</label>
+              </div>
+              <div class="radioBtn-warning">
+                <input type="radio" name="radio" id="player1Computer" />
+                <label for="player1Computer">Computadora</label>
+              </div>
+            </div>
+          </div>
+  
+          <div class="col-md-4">
+            <h2 class="versus">Vs.</h4>
+            </div>
+            <div class="col-md-4">
+              <h2 class="startScreenMarkerO">O's</h2>
+            <div class="radio">
+              <div class="radioBtn-primary">
+                <input type="radio" name="radio2" id="player2Human" />
+                <label for="player2Human">Humano</label>
+              </div>
+              <div class="radioBtn-primary">
+                <input type="radio" name="radio2" id="player2Computer" />
+                <label for="player2Computer">Computadora</label>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <div class="row">
+          <div class="col-md-12">
+            <button class="startGame btn btn-lg btn-block btn-success disabled">Comenzar</button>
+          </div>
+        </div>
+      </div>
+      <!-- /introUtility -->
+  
+      <div class="scoreboardUtility">
+        <div class="row">
+          <div class="col-sm-4">
+            <h4 class="score">Juego numero 1<br>X's 0, O's 0</h4>
+          </div>
+          <div class="col-sm-4">
+            <h3 class="messageToPlayer">X's, <span class="actionWord">go!</span></h3>
+          </div>
+          <div class="col-sm-4">
+            <button class="playAgain btn btn-info disabled">Jugar de nuevo</button>
+            <button class="resetGame btn btn-danger">Reset</button>
+          </div>
+        </div>
+      </div>
+      <!-- /scoreboardUtility -->
+    </div>
+    <!-- dialogueBox -->
+  
+    <div class="row">
+      <div class="col-md-12">
+        <table>
+          <tr>
+            <td class="gameSquare">
+              <canvas></canvas>
+            </td>
+            <td class="gameSquare">
+              <canvas></canvas>
+            </td>
+            <td class="gameSquare">
+              <canvas></canvas>
+            </td>
+          </tr>
+          <tr>
+            <td class="gameSquare">
+              <canvas></canvas>
+            </td>
+            <td class="gameSquare">
+              <canvas></canvas>
+            </td>
+            <td class="gameSquare">
+              <canvas></canvas>
+            </td>
+          </tr>
+          <tr>
+            <td class="gameSquare">
+              <canvas></canvas>
+            </td>
+            <td class="gameSquare">
+              <canvas></canvas>
+            </td>
+            <td class="gameSquare">
+              <canvas></canvas>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  
+  </div>
+  <!-- /container -->
+  <script src="./script.js"></script>
+</body>
+</html>
+
+
+
+
